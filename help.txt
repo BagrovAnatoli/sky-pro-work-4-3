@@ -1,0 +1,16 @@
+Шпаргалка
+https://skyengpublic.notion.site/4-3-Code-Linting-f61be6b0bab444b7b187bcb6e49349ce
+
+гит
+https://github.com/mrerberg/tools
+
+вместо
+npx husky add .husky/pre-commit "npm run lint"
+
+вот так
+./node_modules/.bin/husky set .husky/pre-commit "npm run lint"
+
+но перед этим:
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+(об этой команде здесь https://docs.microsoft.com/ru-ru/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.2)
+
